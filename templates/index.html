@@ -1,0 +1,48 @@
+<!-- Basic HTML structure -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Brain Match Game</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+     <!-- Title section -->
+     <div id="container">
+        <header>
+             <h1 id="title">Memory Matching Game</h1>
+        </header>
+    </div>
+     <!-- Welcome message -->
+     <div style="text-align: center;">
+             <h2 id="welcome-message" style="display: none;"></h2>
+     </div>
+
+    <!-- Form to get user name -->
+     <div align="center">
+        <form id="name-form">
+            <p><label for="username">Your Name:</label></p>
+            <input type="text" id="username" required>
+            <input type="submit" value="Start Game">
+        </form>
+    </div>
+
+    <!-- Game board and move counter -->
+    <div align="center">
+        <p>Moves: <span id="move-counter">0</span></p>
+        <div class="game-board" id="game-board">
+            <!-- $$CARDS$$ will be added from script -->
+        </div>
+        <br>
+        <button onclick="startGame()">Restart Game</button>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>Enjoy the game and test your memory skills!</p>
+    </footer>
+
+    <!-- JavaScript file -->
+    <script src="/static/script.js"></script>
+
+</body>
+</html>
